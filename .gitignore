@@ -1,0 +1,7 @@
+#stuff to ignore
+nbproject/
+
+file-exch-config.ini
+
+help.php
+*.pdf

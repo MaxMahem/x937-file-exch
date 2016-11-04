@@ -1,0 +1,10 @@
+php_value include_path ".:/opt/file-exch/include/"
+
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile  /opt/file-exch/.htpasswd 
+AuthGroupFile /dev/null 
+require valid-user
+
+RewriteEngine On
+RewriteRule ^download/([^/]*)$ download.php?fileId=$1 [L]
